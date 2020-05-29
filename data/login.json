@@ -1,0 +1,68 @@
+{
+  "login":[{
+            "id":"1",
+            "case_id": "login_001",
+            "case_name": "输入正确的账号和密码，登录成功",
+            "api_name": "login",
+            "api_method": "post",
+            "is_run":     "yes",
+            "header": {"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"},
+            "api_url": "/index/login",
+            "request_data": {"mobile": "13700000123","password": "111111q", "type": 0, "gear": "pc"},
+            "expect_result": {"code":"0","mobile":"13700000123"},
+            "priority": "1"
+          },
+          {
+            "id":"2",
+            "case_id": "login_002",
+            "case_name": "输入错误的账号，登录失败！",
+            "api_name": "login",
+            "api_method": "post",
+            "is_run":     "yes",
+            "header": {"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"},
+            "api_url": "/index/login",
+            "request_data": {"mobile": "13700000120","password": "111111q", "type": 0, "gear": "pc"},
+            "expect_result": {"code": "1002","data": "","msg": "输入的账号或密码错误"},
+            "priority": "2"
+          },
+          {
+            "id":"3",
+            "case_id": "login_003",
+            "case_name": "输入正确的账号错误密码，登录失败！",
+            "api_name": "login",
+            "api_method": "post",
+            "is_run":     "yes",
+            "header": {"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"},
+            "api_url": "/index/login",
+            "request_data": {"mobile": "13700000123","password": "111113q", "type": 0, "gear": "pc"},
+            "expect_result": {"code": "1002","data": "","msg": "输入的账号或密码错误"},
+            "priority": "2"
+          },
+          {
+            "id":"4",
+            "case_id": "login_004",
+            "case_name": "输入账号和密码都为空，登录失败！",
+            "api_name": "login",
+            "api_method": "post",
+            "is_run":     "yes",
+            "header": {"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"},
+            "api_url": "/index/login",
+            "request_data": {"mobile": "","password": "", "type": 0, "gear": "pc"},
+            "expect_result": {"code": "1004","data": "","msg": "登录参数缺失"},
+            "priority": "2"
+          },
+         {
+            "id":"5",
+            "case_id": "login_005",
+            "case_name": "输入账号和密码都为空，登录失败！",
+            "api_name": "login",
+            "api_method": "post",
+            "is_run":     "yes",
+            "header": {"Content-Type":"application/x-www-form-urlencoded; charset=UTF-8"},
+            "api_url": "/index/login",
+            "request_data": {"mobile": "","password": "", "type": 0, "gear": "pc"},
+            "expect_result": {"code": "1005","data": "","msg": "登录参数缺失"},
+            "priority": "2"
+          }
+  ]
+}

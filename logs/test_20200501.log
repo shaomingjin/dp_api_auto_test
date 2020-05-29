@@ -1,0 +1,512 @@
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 第1条用例--输入正确的账号和密码，登录成功--开始执行--.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000123', 'password': '111111q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** login接口响应数据为:{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'ug9t2qrmlc1gek1tg2h71lnm76', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 接口响应数据校验：接口响应数据中包含的字段为：{'code': '0', 'mobile': '13700000123'},期望结果为:{'code': '0', 'mobile': '13700000123'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 第1条用例--输入正确的账号和密码，登录成功--执行成功，返回的code为--0，结果返回值为--{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'ug9t2qrmlc1gek1tg2h71lnm76', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 第2条用例--输入错误的账号，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000120', 'password': '111111q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000120&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'},期望结果为:{'code': '1002', 'data': '', 'msg': '输入的账号或密码错误'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 第2条用例--输入错误的账号，登录失败！--执行成功，返回的code为--1002，结果返回值为--{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 第3条用例--输入正确的账号错误密码，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000123', 'password': '111113q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000123&password=111113q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'},期望结果为:{'code': '1002', 'data': '', 'msg': '输入的账号或密码错误'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 第3条用例--输入正确的账号错误密码，登录失败！--执行成功，返回的code为--1002，结果返回值为--{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 第4条用例--输入账号和密码都为空，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '', 'password': '', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为:{'code': '1004', 'data': '', 'msg': '登录参数缺失'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 第4条用例--输入账号和密码都为空，登录失败！--执行成功，返回的code为--1004，结果返回值为--{'data': '', 'msg': '登录参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 第5条用例--输入账号和密码都为空，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '', 'password': '', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为:{'code': '1005', 'data': '', 'msg': '登录参数缺失'}.
+[ 2020-05-01 ]--MainThread 21072  line:46  [ERROR] *** 第5条用例--输入账号和密码都为空，登录失败！--执行失败！！,返回的code为--1004，结果返回值为--{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 调用公共的登录方法
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'g4eefksj5gu515jsg8jren85ck', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 【登录成功后，获取到的uid为：baa613d4c4fee09c237e9ed85726613a，获取到的key为：g4eefksj5gu515jsg8jren85ck.】
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'baa613d4c4fee09c237e9ed85726613a', 'sign': '4899f2b123eb94a1f58c4ea3407af030612c0e21', 'key': 'g4eefksj5gu515jsg8jren85ck', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588263011'}】
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 个人中心接口请求数据为：uid=baa613d4c4fee09c237e9ed85726613a&sign=4899f2b123eb94a1f58c4ea3407af030612c0e21&key=g4eefksj5gu515jsg8jren85ck&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588263011.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 第5条用例名称为：输入正确的UID，可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'fdsfdfdfdfd333333', 'sign': '4899f2b123eb94a1f58c4ea3407af030612c0e21', 'key': 'g4eefksj5gu515jsg8jren85ck', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588263011'}】
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 个人中心接口请求数据为：uid=fdsfdfdfdfd333333&sign=4899f2b123eb94a1f58c4ea3407af030612c0e21&key=g4eefksj5gu515jsg8jren85ck&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588263011.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 第6条用例名称为：输入不存在的UID，不可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': '', 'sign': '4899f2b123eb94a1f58c4ea3407af030612c0e21', 'key': 'g4eefksj5gu515jsg8jren85ck', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588263011'}】
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 个人中心接口请求数据为：uid=&sign=4899f2b123eb94a1f58c4ea3407af030612c0e21&key=g4eefksj5gu515jsg8jren85ck&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588263011.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 个人中心接口响应数据为：{'data': '', 'msg': '参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 【第7条用例用例名称为：uid为空，不可获取个人中心数据---执行成功，结果返回值为：{'data': '', 'msg': '参数缺失', 'code': '1004'}，期望结果为：{'data': '', 'msg': '参数缺失', 'code': '1004'}】
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第1条测试用例，测试用例名称为：输入正确的用户名和密码，成功登陆:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'hunv2g2ac9nuhnhpoln0kolfm1', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 21072  line:46  [ERROR] *** 【第1条用例名称为：输入正确的用户名和密码，成功登陆--执行失败！！，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'hunv2g2ac9nuhnhpoln0kolfm1', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}，期望结果为：{'code': '0', 'msg': '', 'mobile': '13700000124'}】
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000120&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 【第2条用例用例名称为：输入错误的用户名，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111112q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 【第3条用例用例名称为：输入错误的密码，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** **************************************第4条测试用例，测试用例名称为：用户名和密码都为空，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口请求数据为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21072  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 21072  line:46  [ERROR] *** 【第4条用例名称为：用户名和密码都为空，登陆失败--执行失败！！,结果返回值为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 第1条用例--输入正确的账号和密码，登录成功--开始执行--.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000123', 'password': '111111q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** login接口响应数据为:{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': '8uf0c1ulkqvqfu1ajr7n0eftku', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 接口响应数据校验：接口响应数据中包含的字段为：{'code': '0', 'mobile': '13700000123'},期望结果为:{'code': '0', 'mobile': '13700000123'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 第1条用例--输入正确的账号和密码，登录成功--执行成功，返回的code为--0，结果返回值为--{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': '8uf0c1ulkqvqfu1ajr7n0eftku', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 第2条用例--输入错误的账号，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000120', 'password': '111111q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000120&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'},期望结果为:{'code': '1002', 'data': '', 'msg': '输入的账号或密码错误'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 第2条用例--输入错误的账号，登录失败！--执行成功，返回的code为--1002，结果返回值为--{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 第3条用例--输入正确的账号错误密码，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000123', 'password': '111113q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000123&password=111113q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'},期望结果为:{'code': '1002', 'data': '', 'msg': '输入的账号或密码错误'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 第3条用例--输入正确的账号错误密码，登录失败！--执行成功，返回的code为--1002，结果返回值为--{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 第4条用例--输入账号和密码都为空，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '', 'password': '', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为:{'code': '1004', 'data': '', 'msg': '登录参数缺失'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 第4条用例--输入账号和密码都为空，登录失败！--执行成功，返回的code为--1004，结果返回值为--{'data': '', 'msg': '登录参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 第5条用例--输入账号和密码都为空，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '', 'password': '', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为:{'code': '1005', 'data': '', 'msg': '登录参数缺失'}.
+[ 2020-05-01 ]--MainThread 6876  line:46  [ERROR] *** 第5条用例--输入账号和密码都为空，登录失败！--执行失败！！,返回的code为--1004，结果返回值为--{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 调用公共的登录方法
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'p9bp1pm1p0o8q96qe0a2fovoed', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 【登录成功后，获取到的uid为：baa613d4c4fee09c237e9ed85726613a，获取到的key为：p9bp1pm1p0o8q96qe0a2fovoed.】
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'baa613d4c4fee09c237e9ed85726613a', 'sign': '884f7c84c4ce4f47dfe803fdfd3bb4f236553e59', 'key': 'p9bp1pm1p0o8q96qe0a2fovoed', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588263354'}】
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 个人中心接口请求数据为：uid=baa613d4c4fee09c237e9ed85726613a&sign=884f7c84c4ce4f47dfe803fdfd3bb4f236553e59&key=p9bp1pm1p0o8q96qe0a2fovoed&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588263354.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 第5条用例名称为：输入正确的UID，可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'fdsfdfdfdfd333333', 'sign': '884f7c84c4ce4f47dfe803fdfd3bb4f236553e59', 'key': 'p9bp1pm1p0o8q96qe0a2fovoed', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588263354'}】
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 个人中心接口请求数据为：uid=fdsfdfdfdfd333333&sign=884f7c84c4ce4f47dfe803fdfd3bb4f236553e59&key=p9bp1pm1p0o8q96qe0a2fovoed&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588263354.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 第6条用例名称为：输入不存在的UID，不可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': '', 'sign': '884f7c84c4ce4f47dfe803fdfd3bb4f236553e59', 'key': 'p9bp1pm1p0o8q96qe0a2fovoed', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588263354'}】
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 个人中心接口请求数据为：uid=&sign=884f7c84c4ce4f47dfe803fdfd3bb4f236553e59&key=p9bp1pm1p0o8q96qe0a2fovoed&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588263354.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 个人中心接口响应数据为：{'data': '', 'msg': '参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 【第7条用例用例名称为：uid为空，不可获取个人中心数据---执行成功，结果返回值为：{'data': '', 'msg': '参数缺失', 'code': '1004'}，期望结果为：{'data': '', 'msg': '参数缺失', 'code': '1004'}】
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第1条测试用例，测试用例名称为：输入正确的用户名和密码，成功登陆:开始执行**************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'lugji6arh4ins8ekgq1l8jgus8', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 【第1条测试用例;测试用例名称为：输入正确的用户名和密码，成功登陆--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'lugji6arh4ins8ekgq1l8jgus8', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}，期望结果为：{'code': '0', 'msg': '', 'mobile': '13700000123'}】
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第1条测试用例，测试用例名称为：输入正确的用户名和密码，成功登陆:执行结束*************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000120&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 【第2条测试用例;测试用例名称为：输入错误的用户名，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111112q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 【第3条测试用例;测试用例名称为：输入错误的密码，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** **************************************第4条测试用例，测试用例名称为：用户名和密码都为空，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口请求数据为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 6876  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 6876  line:46  [ERROR] *** 【第4条测试用例;测试用例名称为：用户名和密码都为空，登陆失败--执行失败！！,结果返回值为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 第1条用例--输入正确的账号和密码，登录成功--开始执行--.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000123', 'password': '111111q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** login接口响应数据为:{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'g8hps19b3mh6aikrekm9bas49h', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 接口响应数据校验：接口响应数据中包含的字段为：{'code': '0', 'mobile': '13700000123'},期望结果为:{'code': '0', 'mobile': '13700000123'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 第1条用例--输入正确的账号和密码，登录成功--执行成功，返回的code为--0，结果返回值为--{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'g8hps19b3mh6aikrekm9bas49h', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 第2条用例--输入错误的账号，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000120', 'password': '111111q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000120&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'},期望结果为:{'code': '1002', 'data': '', 'msg': '输入的账号或密码错误'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 第2条用例--输入错误的账号，登录失败！--执行成功，返回的code为--1002，结果返回值为--{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 第3条用例--输入正确的账号错误密码，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000123', 'password': '111113q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000123&password=111113q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'},期望结果为:{'code': '1002', 'data': '', 'msg': '输入的账号或密码错误'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 第3条用例--输入正确的账号错误密码，登录失败！--执行成功，返回的code为--1002，结果返回值为--{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 第4条用例--输入账号和密码都为空，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '', 'password': '', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为:{'code': '1004', 'data': '', 'msg': '登录参数缺失'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 第4条用例--输入账号和密码都为空，登录失败！--执行成功，返回的code为--1004，结果返回值为--{'data': '', 'msg': '登录参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 第5条用例--输入账号和密码都为空，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '', 'password': '', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为:{'code': '1005', 'data': '', 'msg': '登录参数缺失'}.
+[ 2020-05-01 ]--MainThread 8396  line:46  [ERROR] *** 第5条用例--输入账号和密码都为空，登录失败！--执行失败！！,返回的code为--1004，结果返回值为--{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 调用公共的登录方法
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': '15ovevdf7fhggk7mpuooq2te57', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 【登录成功后，获取到的uid为：baa613d4c4fee09c237e9ed85726613a，获取到的key为：15ovevdf7fhggk7mpuooq2te57.】
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'baa613d4c4fee09c237e9ed85726613a', 'sign': '279e5f267aff174a66a2b892df47c532d3d0dde7', 'key': '15ovevdf7fhggk7mpuooq2te57', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588263581'}】
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 个人中心接口请求数据为：uid=baa613d4c4fee09c237e9ed85726613a&sign=279e5f267aff174a66a2b892df47c532d3d0dde7&key=15ovevdf7fhggk7mpuooq2te57&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588263581.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 第5条用例名称为：输入正确的UID，可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'fdsfdfdfdfd333333', 'sign': '279e5f267aff174a66a2b892df47c532d3d0dde7', 'key': '15ovevdf7fhggk7mpuooq2te57', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588263581'}】
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 个人中心接口请求数据为：uid=fdsfdfdfdfd333333&sign=279e5f267aff174a66a2b892df47c532d3d0dde7&key=15ovevdf7fhggk7mpuooq2te57&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588263581.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 第6条用例名称为：输入不存在的UID，不可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': '', 'sign': '279e5f267aff174a66a2b892df47c532d3d0dde7', 'key': '15ovevdf7fhggk7mpuooq2te57', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588263581'}】
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 个人中心接口请求数据为：uid=&sign=279e5f267aff174a66a2b892df47c532d3d0dde7&key=15ovevdf7fhggk7mpuooq2te57&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588263581.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 个人中心接口响应数据为：{'data': '', 'msg': '参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 【第7条用例用例名称为：uid为空，不可获取个人中心数据---执行成功，结果返回值为：{'data': '', 'msg': '参数缺失', 'code': '1004'}，期望结果为：{'data': '', 'msg': '参数缺失', 'code': '1004'}】
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第1条测试用例，测试用例名称为：输入正确的用户名和密码，成功登陆:开始执行**************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'locb1p25uua9pc4c0g96njkc3c', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 【第1条测试用例;测试用例名称为：输入正确的用户名和密码，成功登陆--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'locb1p25uua9pc4c0g96njkc3c', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}，期望结果为：{'code': '0', 'msg': '', 'mobile': '13700000123'}】
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第1条测试用例，测试用例名称为：输入正确的用户名和密码，成功登陆:执行结束*************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000120&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 【第2条测试用例;测试用例名称为：输入错误的用户名，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111112q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 【第3条测试用例;测试用例名称为：输入错误的密码，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** **************************************第4条测试用例，测试用例名称为：用户名和密码都为空，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口请求数据为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 8396  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 8396  line:46  [ERROR] *** 【第4条测试用例;测试用例名称为：用户名和密码都为空，登陆失败--执行失败！！,结果返回值为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 调用公共的登录方法
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'fdsc8hj013fgek0lnkdg44btap', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 【登录成功后，获取到的uid为：baa613d4c4fee09c237e9ed85726613a，获取到的key为：fdsc8hj013fgek0lnkdg44btap.】
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'baa613d4c4fee09c237e9ed85726613a', 'sign': '556c2288ea62119565a424439996944cdc10b9d4', 'key': 'fdsc8hj013fgek0lnkdg44btap', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264294'}】
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 个人中心接口请求数据为：uid=baa613d4c4fee09c237e9ed85726613a&sign=556c2288ea62119565a424439996944cdc10b9d4&key=fdsc8hj013fgek0lnkdg44btap&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264294.
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 第5条用例名称为：输入正确的UID，可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'fdsfdfdfdfd333333', 'sign': '556c2288ea62119565a424439996944cdc10b9d4', 'key': 'fdsc8hj013fgek0lnkdg44btap', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264294'}】
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 个人中心接口请求数据为：uid=fdsfdfdfdfd333333&sign=556c2288ea62119565a424439996944cdc10b9d4&key=fdsc8hj013fgek0lnkdg44btap&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264294.
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 第6条用例名称为：输入不存在的UID，不可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': '', 'sign': '556c2288ea62119565a424439996944cdc10b9d4', 'key': 'fdsc8hj013fgek0lnkdg44btap', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264294'}】
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 个人中心接口请求数据为：uid=&sign=556c2288ea62119565a424439996944cdc10b9d4&key=fdsc8hj013fgek0lnkdg44btap&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264294.
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 个人中心接口响应数据为：{'data': '', 'msg': '参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** 【第7条用例用例名称为：uid为空，不可获取个人中心数据---执行成功，结果返回值为：{'data': '', 'msg': '参数缺失', 'code': '1004'}，期望结果为：{'data': '', 'msg': '参数缺失', 'code': '1004'}】
+[ 2020-05-01 ]--MainThread 15148  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 第1条用例--输入正确的账号和密码，登录成功--开始执行--.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000123', 'password': '111111q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** login接口响应数据为:{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'gmq2to6e6of7m8pfastf49mdl1', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 接口响应数据校验：接口响应数据中包含的字段为：{'code': '0', 'mobile': '13700000123'},期望结果为:{'code': '0', 'mobile': '13700000123'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 第1条用例--输入正确的账号和密码，登录成功--执行成功，返回的code为--0，结果返回值为--{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'gmq2to6e6of7m8pfastf49mdl1', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 第2条用例--输入错误的账号，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000120', 'password': '111111q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000120&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'},期望结果为:{'code': '1002', 'data': '', 'msg': '输入的账号或密码错误'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 第2条用例--输入错误的账号，登录失败！--执行成功，返回的code为--1002，结果返回值为--{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 第3条用例--输入正确的账号错误密码，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000123', 'password': '111113q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000123&password=111113q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'},期望结果为:{'code': '1002', 'data': '', 'msg': '输入的账号或密码错误'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 第3条用例--输入正确的账号错误密码，登录失败！--执行成功，返回的code为--1002，结果返回值为--{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 第4条用例--输入账号和密码都为空，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '', 'password': '', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为:{'code': '1004', 'data': '', 'msg': '登录参数缺失'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 第4条用例--输入账号和密码都为空，登录失败！--执行成功，返回的code为--1004，结果返回值为--{'data': '', 'msg': '登录参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 第5条用例--输入账号和密码都为空，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '', 'password': '', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为:{'code': '1005', 'data': '', 'msg': '登录参数缺失'}.
+[ 2020-05-01 ]--MainThread 21572  line:46  [ERROR] *** 第5条用例--输入账号和密码都为空，登录失败！--执行失败！！,返回的code为--1004，结果返回值为--{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 调用公共的登录方法
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'n2e30jfqce29ha4pe7pnrp492e', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 【登录成功后，获取到的uid为：baa613d4c4fee09c237e9ed85726613a，获取到的key为：n2e30jfqce29ha4pe7pnrp492e.】
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'baa613d4c4fee09c237e9ed85726613a', 'sign': 'ca5e23143af356611ca4c5003b2a66ccceb992e2', 'key': 'n2e30jfqce29ha4pe7pnrp492e', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264312'}】
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 个人中心接口请求数据为：uid=baa613d4c4fee09c237e9ed85726613a&sign=ca5e23143af356611ca4c5003b2a66ccceb992e2&key=n2e30jfqce29ha4pe7pnrp492e&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264312.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 第5条用例名称为：输入正确的UID，可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'fdsfdfdfdfd333333', 'sign': 'ca5e23143af356611ca4c5003b2a66ccceb992e2', 'key': 'n2e30jfqce29ha4pe7pnrp492e', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264312'}】
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 个人中心接口请求数据为：uid=fdsfdfdfdfd333333&sign=ca5e23143af356611ca4c5003b2a66ccceb992e2&key=n2e30jfqce29ha4pe7pnrp492e&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264312.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 第6条用例名称为：输入不存在的UID，不可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': '', 'sign': 'ca5e23143af356611ca4c5003b2a66ccceb992e2', 'key': 'n2e30jfqce29ha4pe7pnrp492e', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264312'}】
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 个人中心接口请求数据为：uid=&sign=ca5e23143af356611ca4c5003b2a66ccceb992e2&key=n2e30jfqce29ha4pe7pnrp492e&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264312.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 个人中心接口响应数据为：{'data': '', 'msg': '参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 【第7条用例用例名称为：uid为空，不可获取个人中心数据---执行成功，结果返回值为：{'data': '', 'msg': '参数缺失', 'code': '1004'}，期望结果为：{'data': '', 'msg': '参数缺失', 'code': '1004'}】
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第1条测试用例，测试用例名称为：输入正确的用户名和密码，成功登陆:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': '62km27pqg56smn0d7aphd0j49t', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 【第1条测试用例;测试用例名称为：输入正确的用户名和密码，成功登陆--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': '62km27pqg56smn0d7aphd0j49t', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}，期望结果为：{'code': '0', 'msg': '', 'mobile': '13700000123'}】
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第1条测试用例，测试用例名称为：输入正确的用户名和密码，成功登陆:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000120&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 【第2条测试用例;测试用例名称为：输入错误的用户名，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111112q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 【第3条测试用例;测试用例名称为：输入错误的密码，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** **************************************第4条测试用例，测试用例名称为：用户名和密码都为空，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口请求数据为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 21572  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 21572  line:46  [ERROR] *** 【第4条测试用例;测试用例名称为：用户名和密码都为空，登陆失败--执行失败！！,结果返回值为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 第1条用例--输入正确的账号和密码，登录成功--开始执行--.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000123', 'password': '111111q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** login接口响应数据为:{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': '0c7c6lln2f9cs1vnkcsg2o6vb6', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 接口响应数据校验：接口响应数据中包含的字段为：{'code': '0', 'mobile': '13700000123'},期望结果为:{'code': '0', 'mobile': '13700000123'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 第1条用例--输入正确的账号和密码，登录成功--执行成功，返回的code为--0，结果返回值为--{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': '0c7c6lln2f9cs1vnkcsg2o6vb6', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 第2条用例--输入错误的账号，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000120', 'password': '111111q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000120&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'},期望结果为:{'code': '1002', 'data': '', 'msg': '输入的账号或密码错误'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 第2条用例--输入错误的账号，登录失败！--执行成功，返回的code为--1002，结果返回值为--{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 第3条用例--输入正确的账号错误密码，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '13700000123', 'password': '111113q', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=13700000123&password=111113q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'},期望结果为:{'code': '1002', 'data': '', 'msg': '输入的账号或密码错误'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 第3条用例--输入正确的账号错误密码，登录失败！--执行成功，返回的code为--1002，结果返回值为--{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 第4条用例--输入账号和密码都为空，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '', 'password': '', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为:{'code': '1004', 'data': '', 'msg': '登录参数缺失'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 第4条用例--输入账号和密码都为空，登录失败！--执行成功，返回的code为--1004，结果返回值为--{'data': '', 'msg': '登录参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 第5条用例--输入账号和密码都为空，登录失败！--开始执行--.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** login接口请求的URL为:https://app.service.yihuayidong.com/index/login,请求方式为:post,请求数据为:{'mobile': '', 'password': '', 'type': 0, 'gear': 'pc'},请求header为:{'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口发送的请求参数为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** login接口响应数据为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 响应结果为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为:{'code': '1005', 'data': '', 'msg': '登录参数缺失'}.
+[ 2020-05-01 ]--MainThread 22444  line:46  [ERROR] *** 第5条用例--输入账号和密码都为空，登录失败！--执行失败！！,返回的code为--1004，结果返回值为--{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 调用公共的登录方法
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'l4tq8cg2bel1hmff0ucbosv37r', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 【登录成功后，获取到的uid为：baa613d4c4fee09c237e9ed85726613a，获取到的key为：l4tq8cg2bel1hmff0ucbosv37r.】
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'baa613d4c4fee09c237e9ed85726613a', 'sign': 'fbd2068bda734b6149a47ddfda95148d2df1252c', 'key': 'l4tq8cg2bel1hmff0ucbosv37r', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264407'}】
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 个人中心接口请求数据为：uid=baa613d4c4fee09c237e9ed85726613a&sign=fbd2068bda734b6149a47ddfda95148d2df1252c&key=l4tq8cg2bel1hmff0ucbosv37r&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264407.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 第5条用例名称为：输入正确的UID，可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'fdsfdfdfdfd333333', 'sign': 'fbd2068bda734b6149a47ddfda95148d2df1252c', 'key': 'l4tq8cg2bel1hmff0ucbosv37r', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264407'}】
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 个人中心接口请求数据为：uid=fdsfdfdfdfd333333&sign=fbd2068bda734b6149a47ddfda95148d2df1252c&key=l4tq8cg2bel1hmff0ucbosv37r&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264407.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 第6条用例名称为：输入不存在的UID，不可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': '', 'sign': 'fbd2068bda734b6149a47ddfda95148d2df1252c', 'key': 'l4tq8cg2bel1hmff0ucbosv37r', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264407'}】
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 个人中心接口请求数据为：uid=&sign=fbd2068bda734b6149a47ddfda95148d2df1252c&key=l4tq8cg2bel1hmff0ucbosv37r&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264407.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 个人中心接口响应数据为：{'data': '', 'msg': '参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 【第7条用例用例名称为：uid为空，不可获取个人中心数据---执行成功，结果返回值为：{'data': '', 'msg': '参数缺失', 'code': '1004'}，期望结果为：{'data': '', 'msg': '参数缺失', 'code': '1004'}】
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第1条测试用例，测试用例名称为：输入正确的用户名和密码，成功登陆:开始执行**************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'vn1n9uvki8nn31vuapfkh87sf5', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 【第1条测试用例;测试用例名称为：输入正确的用户名和密码，成功登陆--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'vn1n9uvki8nn31vuapfkh87sf5', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}，期望结果为：{'code': '0', 'msg': '', 'mobile': '13700000123'}】
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第1条测试用例，测试用例名称为：输入正确的用户名和密码，成功登陆:执行结束*************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000120&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 【第2条测试用例;测试用例名称为：输入错误的用户名，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111112q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 【第3条测试用例;测试用例名称为：输入错误的密码，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** **************************************第4条测试用例，测试用例名称为：用户名和密码都为空，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口请求数据为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 22444  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 22444  line:46  [ERROR] *** 【第4条测试用例;测试用例名称为：用户名和密码都为空，登陆失败--执行失败！！,结果返回值为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：email：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 调用公共的登录方法
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'rmpg746mivld7720lgdb6lk8s1', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 【登录成功后，获取到的uid为：baa613d4c4fee09c237e9ed85726613a，获取到的key为：rmpg746mivld7720lgdb6lk8s1.】
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'baa613d4c4fee09c237e9ed85726613a', 'sign': '6fea744402d3d4047b6046157e8282dd17cceebd', 'key': 'rmpg746mivld7720lgdb6lk8s1', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264840'}】
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 个人中心接口请求数据为：uid=baa613d4c4fee09c237e9ed85726613a&sign=6fea744402d3d4047b6046157e8282dd17cceebd&key=rmpg746mivld7720lgdb6lk8s1&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264840.
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 第5条用例名称为：输入正确的UID，可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'headimg': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/375532ee96a2e326e3779520f3f02416.png', 'name': 'auto_test', 'sex': 2, 'info': None, 'companyname': '北京大学第三医院', 'company': 20, 'province': 110000, 'city': 110100, 'area': 110101, 'department': 0, 'occname': 3, 'subject': '3,5', 'workcard': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/e2d47432c834a94fcf5c42505b8458aa.jpg', 'idpic': 'https://yhyd-resources.oss-cn-beijing.aliyuncs.com/image/d1c50c47b9407d7dafd38bddfb611919.jpg', 'certificatepic': None, 'certificatepicinfo': None, 'email': None, 'status': 0, 'auth_num': 5, 'auth_type': 'doctors', 'auth_ch': '医生/护士', 'province_ch': '北京', 'city_ch': '北京市', 'area_ch': '东城区', 'occname_ch': '主任医师', 'subject_ch': '风湿、呼吸', 'depart_ch': False, 'hospitallevel': '三甲', 'auth': 2, 'mobile': '13700000123', 'wxid': None, 'admin_name': '邵明金', 'auth_time': 1527058527}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第5条测试用例，测试用例名称为：输入正确的UID，可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': 'fdsfdfdfdfd333333', 'sign': '6fea744402d3d4047b6046157e8282dd17cceebd', 'key': 'rmpg746mivld7720lgdb6lk8s1', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264840'}】
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 个人中心接口请求数据为：uid=fdsfdfdfdfd333333&sign=6fea744402d3d4047b6046157e8282dd17cceebd&key=rmpg746mivld7720lgdb6lk8s1&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264840.
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 个人中心接口响应数据为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}.
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 第6条用例名称为：输入不存在的UID，不可获取个人中心数据--执行成功，结果返回值为：{'data': {'uid': 'fdsfdfdfdfd333333', 'auth': None, 'mobile': None, 'wxid': None, 'auth_num': 0}, 'msg': '', 'code': '0'}，期望结果为：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第6条测试用例，测试用例名称为：输入不存在的UID，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:开始执行**************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 【开始调用个人中心接口,request_url:https://app.service.yihuayidong.com/index/userinfo/myUserallinfo,request_method:post,header:{"Content-Type":"application/x-www-form-urlencoded"},request_data:{'uid': '', 'sign': '6fea744402d3d4047b6046157e8282dd17cceebd', 'key': 'rmpg746mivld7720lgdb6lk8s1', 'u': 'baa613d4c4fee09c237e9ed85726613a', 'gettime': '1588264840'}】
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 个人中心接口请求数据为：uid=&sign=6fea744402d3d4047b6046157e8282dd17cceebd&key=rmpg746mivld7720lgdb6lk8s1&u=baa613d4c4fee09c237e9ed85726613a&gettime=1588264840.
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 个人中心接口响应数据为：{'data': '', 'msg': '参数缺失', 'code': '1004'}.
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 【第7条用例用例名称为：uid为空，不可获取个人中心数据---执行成功，结果返回值为：{'data': '', 'msg': '参数缺失', 'code': '1004'}，期望结果为：{'data': '', 'msg': '参数缺失', 'code': '1004'}】
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第7条测试用例，测试用例名称为：uid为空，不可获取个人中心数据:执行结束*************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第1条测试用例，测试用例名称为：输入正确的用户名和密码，成功登陆:开始执行**************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 登录接口响应数据为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'i4lh625t36eqnngfock2qesoq9', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 【第1条测试用例;测试用例名称为：输入正确的用户名和密码，成功登陆--执行成功，结果返回值为：{'data': {'uid': 'baa613d4c4fee09c237e9ed85726613a', 'h_wxopenid': None, 'auth': 2, 'state': 0, 'auth_type_num': 5, 'subject': '3,5', 'key': 'i4lh625t36eqnngfock2qesoq9', 'mobile': '13700000123'}, 'msg': '', 'code': '0'}，期望结果为：{'code': '0', 'msg': '', 'mobile': '13700000123'}】
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第1条测试用例，测试用例名称为：输入正确的用户名和密码，成功登陆:执行结束*************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000120&password=111111q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 【第2条测试用例;测试用例名称为：输入错误的用户名，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第2条测试用例，测试用例名称为：输入错误的用户名，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 登录接口请求数据为：mobile=13700000123&password=111112q&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 【第3条测试用例;测试用例名称为：输入错误的密码，登陆失败---执行成功，结果返回值为：{'data': '', 'msg': '输入的账号或密码错误', 'code': '1002'}，期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第3条测试用例，测试用例名称为：输入错误的密码，登陆失败:执行结束*************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** **************************************第4条测试用例，测试用例名称为：用户名和密码都为空，登陆失败:开始执行**************************************
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 开始从E:\Python\api_auto_test\config\config.ini文件中读取关键字：host：
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 登录接口请求数据为：mobile=&password=&type=0&gear=pc.
+[ 2020-05-01 ]--MainThread 17128  line:40  [INFO] *** 登录接口响应数据为：{'data': '', 'msg': '登录参数缺失', 'code': '1004'}
+[ 2020-05-01 ]--MainThread 17128  line:46  [ERROR] *** 【第4条测试用例;测试用例名称为：用户名和密码都为空，登陆失败--执行失败！！,结果返回值为:{'data': '', 'msg': '登录参数缺失', 'code': '1004'},期望结果为：{"code": "1002","data": "","msg": "输入的账号或密码错误"}】
