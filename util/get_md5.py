@@ -12,6 +12,7 @@ class GetMD5(object):
     def get_time(self):
         return str(int(time.time()))
 
+
     def get_sign(self,sign):
         '''
         MD5对签名加密
