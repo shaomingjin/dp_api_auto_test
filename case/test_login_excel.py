@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 # @Time : 2020/4/8 0008 下午 19:50 
 # @Author : ShaoMingJin
+
 '''
 目标：实现登录接口业务层，并且测试数据参数化（通过ddt)
-注意：pip install parameterized
 '''
 #导入包
 import unittest,json,ast,ddt
