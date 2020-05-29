@@ -8,7 +8,6 @@ import hashlib
 
 class GetMD5(object):
 
-
     #获取时间
     def get_time(self):
         return str(int(time.time()))
