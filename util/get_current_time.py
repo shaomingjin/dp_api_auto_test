@@ -8,6 +8,10 @@ import time
 class GetCurrentTime():
 
     def get_curr_time(self):
+        '''
+        获取系统当前时间，并返回
+        :return:
+        '''
         curr_time=time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
         return curr_time
 
