@@ -1,24 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Time : 2020/4/18 21:30 
+# @Time : 2020/5/28 19:30
 # @Author : ShaoMingJin
 
 import ast,ddt
 import unittest
 from util.verify_testresult import CheckPoint
-from util.operation_config import OperationConfig
 from util.read_config import ReadConfig
 from util.operation_excel import OperationExcel
 from util.logger import Logger
 from util.get_current_time import GetCurrentTime
 from api.api_myUserInfo import ApiMyUserInfo
-from case.base_testcase import BaseTest
+from case.base_testcase import BaseTestCase
 
 @ddt.ddt
-class TestMyUserInfo(BaseTest):
+class TestMyUserInfo(BaseTestCase):
 
     #获取个人中心测试用例
-    @ddt.data(*OperationExcel("test.xls", 0).get_data_by_api_name("myUserallinfo"))
+    @ddt.data(*OperationExcel(BaseTestCase.excel_path, 0).get_data_by_api_name("myUserallinfo"))
     def test_myUserInfo(self,data):
 
         case_id, api_name, case_name, url, is_run, request_method, header, request_data, expect, result, prority,run_time = tuple(
@@ -27,7 +26,6 @@ class TestMyUserInfo(BaseTest):
         if is_run == "yes":
             Logger().start_case(int(case_id), case_name)
             url=ReadConfig.get_host("url")+url
-            #url = OperationConfig("config.ini").readProperty("host").get("url") + url
             #将字符串转为字典
             request_data=ast.literal_eval(request_data)
             if int(prority)==1:

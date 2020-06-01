@@ -88,7 +88,6 @@ class TestRunner(object):
 if __name__ == '__main__':
     run_testcase = TestRunner()
     run_testcase.run()
-    #print((run_testcase.get_file_name()))
 
 
 

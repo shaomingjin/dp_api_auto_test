@@ -57,8 +57,25 @@ class ReadConfig():
             Logger().error("获取-{}的值失败！！".format(key))
         return value
 
+    @classmethod
+    def get_file_name(self,key):
+        '''
+        根据参数key获取相应excel_path下的value,并返回
+        :param key:
+        :return:
+        '''
+        value=None
+        try:
+            value=config.get("EXCEL_PATH",key)
+        except:
+            Logger().error("获取-{}的值失败！！".format(key))
+
+        return value
+
+
+
 if __name__ == '__main__':
-    print(ReadConfig.get_email('email_host'))
+    print(ReadConfig.get_file_name('file_name'))
     print(ReadConfig.get_host('url'))
 
 

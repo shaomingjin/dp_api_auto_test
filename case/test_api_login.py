@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @Time : 2020/4/8 0008 下午 19:50 
+# @Time : 2020/5/28 0008 下午 19:00
 # @Author : ShaoMingJin
 
 '''
@@ -8,26 +8,28 @@
 '''
 #导入包
 import unittest,json,ast,ddt
-from util.verify_testresult import CheckPoint
 from api.api_login_excel import ApiLogin
+from data.get_data_fromexcel import GetDataFromExcel
 from util.logger import Logger
 from util.operation_excel import OperationExcel
 from util.read_config import ReadConfig
-from data.get_data_fromexcel import GetDataFromExcel
 from util.get_current_time import GetCurrentTime
 
 #新建测试类
+from util.verify_testresult import CheckPoint
+
+
 @ddt.ddt
 class TestLogin(unittest.TestCase):
-
-    #构造函数
+    excel_path = ReadConfig.get_file_name("file_name")
+    @classmethod
     def setUp(self):
-        self.getdata=GetDataFromExcel("test.xls", 0)
-        self.check=CheckPoint()
+        self.response=None
+        self.check = CheckPoint()
+        self.getdata = GetDataFromExcel(self.excel_path, 0)
 
-    @ddt.data(*OperationExcel("test.xls", 0).get_data_by_api_name("login"))
+    @ddt.data(*OperationExcel(excel_path, 0).get_data_by_api_name("login"))
     def test_login(self,test_data):
-
         #获取测试用例的所有列的值
         case_id,api_name,case_name,url,is_run,request_method,header,request_data,expect,result,prority,run_time=tuple(test_data)
 
@@ -47,6 +49,7 @@ class TestLogin(unittest.TestCase):
                 check_point["code"] = code
                 check_point["msg"] = msg
                 check_point["mobile"] = mobile
+                self.response
                 '''判断响应数据和期望结果是否一致'''
                 if self.check.is_equal(check_point,ast.literal_eval(expect)):
                     Logger().info(
